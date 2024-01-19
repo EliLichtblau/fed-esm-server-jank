@@ -39,7 +39,7 @@ module.exports = {
 
     module: {
         parser: {
-            javascript : { importMeta: false } // Absolutely insane this is default behavior
+            javascript : { importMeta: false } 
           },
         rules: [
             {
@@ -52,7 +52,6 @@ module.exports = {
             },
         ],
     },
-    // Does this make any sense to be an external - I don't htink so on server
     externals: {
         "react": "node-commonjs react",
         "react-dom": "node-commonjs react-dom",
@@ -62,7 +61,7 @@ module.exports = {
         new UniversalFederationPlugin({
             isServer: true,
             name: "remote1",
-            remoteType: "script", // Yea this is sstraight up broken lmfao - but it has to be a script because i'm hard substituing in here
+            remoteType: "script", 
             library: { type: 'module' },
             filename: "remoteEntry.js",
             exposes: {
