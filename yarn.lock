@@ -47,13 +47,13 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@module-federation/enhanced@file:../universe/packages/enhanced", "@module-federation/enhanced@file:../universe/packages/enhanced/", "@module-federation/enhanced@workspace:*":
+"@module-federation/enhanced@file:../FED_FORK/universe/packages/enhanced/", "@module-federation/enhanced@file:../universe/packages/enhanced", "@module-federation/enhanced@workspace:*":
   version "0.0.9"
   dependencies:
     "@module-federation/runtime-tools" "workspace:*"
     "@module-federation/sdk" "workspace:*"
 
-"@module-federation/node@file:../universe/packages/node":
+"@module-federation/node@file:../FED_FORK/universe/packages/node/", "@module-federation/node@file:../universe/packages/node":
   version "2.0.7"
   dependencies:
     "@module-federation/enhanced" "workspace:*"
@@ -61,24 +61,24 @@
     "@module-federation/utilities" "workspace:*"
     node-fetch "2.7.0"
 
-"@module-federation/runtime-tools@file:../universe/packages/runtime-tools/", "@module-federation/runtime-tools@workspace:*":
+"@module-federation/runtime-tools@file:../FED_FORK/universe/packages/runtime-tools/", "@module-federation/runtime-tools@workspace:*":
   version "0.0.9"
   dependencies:
     "@module-federation/runtime" "workspace:*"
     "@module-federation/webpack-bundler-runtime" "workspace:*"
 
-"@module-federation/runtime@file:../universe/packages/runtime/", "@module-federation/runtime@workspace:*":
+"@module-federation/runtime@file:../FED_FORK/universe/packages/runtime/", "@module-federation/runtime@workspace:*":
   version "0.0.9"
   dependencies:
     "@module-federation/sdk" "workspace:*"
 
-"@module-federation/sdk@file:../universe/packages/sdk/", "@module-federation/sdk@workspace:*":
+"@module-federation/sdk@file:../FED_FORK/universe/packages/sdk/", "@module-federation/sdk@workspace:*":
   version "0.0.9"
 
-"@module-federation/utilities@file:../universe/packages/utilities/", "@module-federation/utilities@workspace:*":
+"@module-federation/utilities@file:../FED_FORK/universe/packages/utilities/", "@module-federation/utilities@workspace:*":
   version "3.0.5"
 
-"@module-federation/webpack-bundler-runtime@file:../universe/packages/webpack-bundler-runtime/", "@module-federation/webpack-bundler-runtime@workspace:*":
+"@module-federation/webpack-bundler-runtime@file:../FED_FORK/universe/packages/webpack-bundler-runtime/", "@module-federation/webpack-bundler-runtime@workspace:*":
   version "0.0.9"
   dependencies:
     "@module-federation/runtime" "workspace:*"
@@ -479,9 +479,9 @@ call-bind@^1.0.0:
     set-function-length "^1.1.1"
 
 caniuse-lite@^1.0.30001565:
-  version "1.0.30001578"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001578.tgz#11741580434ce60aae4b4a9abee9f9f8d7bf5be5"
-  integrity sha512-J/jkFgsQ3NEl4w2lCoM9ZPxrD+FoBNJ7uJUpGVjIg/j0OwJosWM36EPDv+Yyi0V4twBk9pPmlFS+PLykgEvUmg==
+  version "1.0.30001579"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001579.tgz#45c065216110f46d6274311a4b3fcf6278e0852a"
+  integrity sha512-u5AUVkixruKHJjw/pj9wISlcMpgFWzSrczLZbrqBSxukQixmg0SJ5sZTpvaFvxU0HoQKd4yoyAogyrAz9pzJnA==
 
 chalk@^4.1.0:
   version "4.1.2"
@@ -613,9 +613,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.601:
-  version "1.4.637"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.637.tgz#ed8775cf5e0c380c3e8452e9818a0e4b7a671ac4"
-  integrity sha512-G7j3UCOukFtxVO1vWrPQUoDk3kL70mtvjc/DC/k2o7lE0wAdq+Vwp1ipagOow+BH0uVztFysLWbkM/RTIrbK3w==
+  version "1.4.638"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.638.tgz#5564b750c2ceb64c0d2ef5a22b0748f63b66e0a3"
+  integrity sha512-gpmbAG2LbfPKcDaL5m9IKutKjUx4ZRkvGNkgL/8nKqxkXsBVYykVULboWlqCrHsh3razucgDJDuKoWJmGPdItA==
 
 encodeurl@~1.0.2:
   version "1.0.2"

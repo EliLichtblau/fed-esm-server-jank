@@ -5,13 +5,16 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "webpack -c webpack.server.cjs",
+    "build": "webpack -c webpack.server.cjs webpack.client.cjs",
+    "bs": "webpack -c webpack.server.cjs",
+    "bc": "webpack -c webpack.client.cjs",
     "start": "node --experimental-vm-modules ./dist/server/main.js"
   },
   "dependencies": {
     "express": "^4.18.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@local/shared-lib": "*"
   },
   "devDependencies": {
     "@module-federation/enhanced": "file:../../../universe/packages/enhanced/",

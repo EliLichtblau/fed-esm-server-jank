@@ -1,1 +1,3 @@
 // lel
+
+import("./bootstrap.js")

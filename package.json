@@ -8,11 +8,13 @@
     "packages/*"
   ],
   "resolutions": {
-    "@module-federation/sdk": "file:../universe/packages/sdk/",
-    "@module-federation/enhanced": "file:../universe/packages/enhanced/",
-    "@module-federation/runtime-tools": "file:../universe/packages/runtime-tools/",
-    "@module-federation/utilities": "file:../universe/packages/utilities/",
-    "@module-federation/webpack-bundler-runtime":  "file:../universe/packages/webpack-bundler-runtime/",
-    "@module-federation/runtime": "file:../universe/packages/runtime/"
+    "@module-federation/sdk": "file:../FED_FORK/universe/packages/sdk/",
+    "@module-federation/node": "file:../FED_FORK/universe/packages/node/",
+
+    "@module-federation/enhanced": "file:../FED_FORK/universe/packages/enhanced/",
+    "@module-federation/runtime-tools": "file:../FED_FORK/universe/packages/runtime-tools/",
+    "@module-federation/utilities": "file:../FED_FORK/universe/packages/utilities/",
+    "@module-federation/webpack-bundler-runtime":  "file:../FED_FORK/universe/packages/webpack-bundler-runtime/",
+    "@module-federation/runtime": "file:../FED_FORK/universe/packages/runtime/"
   }
 }

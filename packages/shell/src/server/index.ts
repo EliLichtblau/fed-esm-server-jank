@@ -1,4 +1,5 @@
 import path from "node:path"
+import url from "node:url"
 import express from "express"
 import { render } from "./render"
 
@@ -8,7 +9,8 @@ const app = express()
 // This should be an error in verbatim module syntax and it isn't
 // fucking sick dog
 // console.log(__dirname)
-// app.use("/client", express.static(path.join(__dirname, "../client")))
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
+app.use("/client", express.static(path.join(__dirname, "../client")))
 
 app.get("/", render)
 

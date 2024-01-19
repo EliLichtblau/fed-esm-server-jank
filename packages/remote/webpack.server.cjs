@@ -53,10 +53,10 @@ module.exports = {
         ],
     },
     // Does this make any sense to be an external - I don't htink so on server
-    // externals: {
-    //     "react": "module react",
-    //     "react-dom": "node-commonjs react-dom",
-    // },
+    externals: {
+        "react": "node-commonjs react",
+        "react-dom": "node-commonjs react-dom",
+    },
 
     plugins: [
         new UniversalFederationPlugin({

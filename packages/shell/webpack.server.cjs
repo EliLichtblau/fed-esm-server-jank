@@ -1,7 +1,7 @@
 const path = require("node:path")
 const webpack = require("webpack")
 const { UniversalFederationPlugin } = require("@module-federation/node")
-
+const deps = require("./package.json")
 
 /** @type {import("webpack").Configuration} */
 module.exports = {
@@ -53,10 +53,10 @@ module.exports = {
         ],
     },
     // Does this make any sense to be an external - I don't htink so on server
-    // externals: {
-    //     "react": "module react",
-    //     "react-dom": "node-commonjs react-dom",
-    // },
+    externals: {
+        "react": "node-commonjs react",
+        "react-dom": "node-commonjs react-dom",
+    },
 
     plugins: [
         new UniversalFederationPlugin({
@@ -69,6 +69,20 @@ module.exports = {
             remotes: {
                 remote1: "remote1@http://localhost:3001/server/remoteEntry.js",
             },
+            shared: [{
+                react: {
+                    version: deps.react,
+                    eager: false,
+                    singleton: true,
+
+                },
+                'react-dom': {
+                    version: deps['react-dom'],
+                    eager: false,
+                    singleton: true,
+                }
+
+            }],
         }),
         {
             apply(compiler) {
