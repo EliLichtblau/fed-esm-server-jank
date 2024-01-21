@@ -2,5 +2,6 @@
     "name": "@local/shared-lib",
     "version": "1.0.0",
     "type": "module",
-    "module": "src/index.js"
+    "module": "src/index.js",
+    "types": "src/index.d.ts"
 }
