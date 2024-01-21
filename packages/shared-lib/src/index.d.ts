@@ -1,0 +1,1 @@
+export declare function square(n: number): number
